@@ -30,4 +30,4 @@ for (tmp in activityLabels$V1){
 index <- dim(tidy_data)[2]
 tidy_data[,index-1] <- NULL
 tidy_data[,index] <- NULL
-write.table(tidy_data,'tidy_data.txt',sep='\t')
+write.table(tidy_data,'tidy_data.txt',sep='\t',row.name=FALSE)
